@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Switch Effect</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: maroon; font-family: cursive; font-size: 40px;">Turn the light on or off by clicking on the bulb</h1>
+    <img id="lightbulb" onclick="bulbSwitch()" src="lightoff.jpg" width="350" height="470" style="margin-left:480px; margin-top: 50px;">
+    <script>
+        function bulbSwitch() {
+            var bulb = document.getElementById('lightbulb');
+            if (bulb.src.match("lighton")) {
+                bulb.src = "lightoff.jpg";
+            } else {
+                bulb.src = " lighton.jpg";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
